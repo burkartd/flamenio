@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.2",
     "nodemon": "^2.0.20",
     "postcss": "^8.4.7",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.2.4"
   },
   "engines": {
     "node": "16.13.2"
@@ -33,11 +33,11 @@
     "moment": "^2.29.1",
     "postcss": "^8.4.7",
     "socket.io": "^4.5.4",
-    "tailwindcss": "^3.0.23",
     "translate": "^1.4.1"
   },
   "bugs": {
     "url": "https://github.com/burkartd/flamenio/issues"
   },
-  "homepage": "https://github.com/burkartd/flamenio#readme"
+  "homepage": "https://github.com/burkartd/flamenio#readme",
+  "keywords": []
 }
