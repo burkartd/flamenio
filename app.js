@@ -16,17 +16,28 @@ const io = socketio(server);
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => console.log(`Servr frci na portu ${PORT}`)); 
+server.listen(PORT, () => console.log(`Servr frci na portu ${PORT}`));
 
 var roomsCount = 0;
 
 let rooms = [];
 
-app.use('/scripts', express.static(path.join(__dirname, '/node_modules/chart.js/dist/'))); //abysme měli přístup k frontendu
+
+
+
+//app.use('/scripts', express.static(path.join(__dirname, '/node_modules/chart.js/dist/'))); //abysme měli přístup k frontendu
 
 //nastavení static folder
 app.use(express.static(path.join(__dirname, 'public'))); //abysme měli přístup k frontendu
 
 process.on('uncaughtException', err => {
     console.error(err && err.stack)
-  });
+});
+
+io.on('connection', socket => {
+    console.log('nové připjení');
+
+    socket.on('hostConnect', (data) => {
+        
+    })
+})
