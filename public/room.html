@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galenio - Bouráme jazykovou bariéru ve zdravotnictví</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body>
+    <div class="h-screen w-screen bg-dark font-poppins grid grid-cols-12 grid-rows-10"><!--Full stranka-->
+        <div class="col-start-2 col-span-10 text-[26px] font-semibold text-center text-whiteb md:text-[80px] h-[25vh] pt-[10vh] items-end"><!--nadpis nemocnice-->
+            <div ><h1>Vítejte v</h1></div> 
+            <div ><h1>Nemocnici Tišnov a.s.</h1></div>
+        </div>
+        <div class="col-start-2 col-span-10 font-regular text-lg text-whiteb h-[10vh]"><!--udaje pacienta-->
+            <div class="flex justify-center items-end">
+                <span class="pr-4">Karel Lahváček</span>
+                <span>010101/3434</span>
+            </div>
+            <div class="flex justify-center items-end">
+                <span>Česká republika</span>
+            </div>
+        </div>
+        <div class="col-start-2 col-span-10 h-[45vh]"> <!--hlavni formular-->
+            <form class="pt-6">
+                <textarea
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="exampleFormControlTextarea1"
+                rows="7"
+                placeholder="Your message"
+                required
+                ></textarea>
+                <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                        Další krok
+                </button>
+                
+            </form>
+        </div>
+        <div class="col-start-2 col-span-10 h-[20vh] text-center  lg:col-start-1"><!--Chat icon-->
+            <div class="rounded-full bg-rosen h-24 w-24 mt-[5%] stroke-whiteb flex items-center justify-center lg:ml-12 lg:mt-[4%]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" class="w-16">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
