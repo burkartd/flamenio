@@ -1,0 +1,43 @@
+# Galenio docs
+
+html tailwind soubory, je potřeba si i u sebe nastavit tailwind aby to dobře jelo
+
+**Pacient** celkově - všechny základní stránky jsou hotovy plně responzivně, jedná se o soubory:
+
+welcome.html - první tránka pro pacienta pro zadání připijení do místnosti, ideálně by byla přímo jednotlivá pro tu místnost, takže asi na zadané url prostě
+
+info.html - první form pro pacienta na vyplnění nejzákladnějších věcí
+
+room_pacient.html - hlavní stránka pro pacienta s popsáním problému a kam budou přicházet oznámení a formuláře z nemocnice
+
+chat.html - nastylovanej chat pro pacienta
+
+Co vím, že chybí: 
+
+stránka se slovníčkem (ještě nemám ani návrh, jak může vypadat), 
+
+absolutně formátovaný formuláře a oznámení, který vyskočí, když se pošle, přesné instrukce k oznámení, 
+
+doplnit alt atribut a ke všemu na pochopení, 
+
+změna jazyka (udělal bych to kliknutí na úpravu jazyka popup se scrollovacím políčkem, kde se vybere jazyk znovu)
+
+**Dashboard** celkově - hotový kompletně v mobilní verzi, akorát se většina kódu opakuje, takže je potřeba vždycky vzít jen ten vnitřek a dát to nějak do sebe. Je to v souborech:
+
+index.html - přístupná stránka pro jednotlivé místnosti v nemocnicích, ideálně na url /admin
+
+dashboard,html - hlavní dashboard pro počítač, na mobilu je zde nastylovaný profil pacienta
+
+dashboard_form - mobilní část kódu s formuláři
+
+dashboard_nemocnice - profil nemocnice na mobil
+
+chat nemocnice.html - chat nemocnice na mobil
+
+Co vím, že chybí:
+
+stránka na slovníček pro nemocnic, ve stejné fázi jako u pacienta
+
+alt atributy ke všem věcem s popisem co to dělá
+
+dodělat poslední část počítačovýho dashboardu
