@@ -7,14 +7,14 @@
     <title>Galenio - Bouráme jazykovou bariéru ve zdravotnictví</title>
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
-<body>
-    <div class="h-screen w-screen bg-dark font-poppins"><!--Full stranka-->
+<body class="bg-blu">
+    <div class="h-screen lg:h-[90vh] lg:w-[50vw] lg:ml-[25vw] lg:rounded-xl lg:my-[5vh] bg-dark font-poppins"><!--Full stranka-->
         <div class="absolute rounded-full bg-rosen stroke-whiteb top-2 right-2 h-16 w-16 flex items-center justify-center"><!--Close button-->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="whiteb" class="w-10 h-10">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-        </div>
-        <div class="h-[92vh] overflow-auto"><!--Chat-->
+        </div> 
+        <div class="md:px-20 h-[92vh] lg:h-[82vh] overflow-auto"><!--Chat-->
             <div class="flex justify-start pt-6"><!--Example hospital-->
                 <div class="rounded-full mx-2 w-12 h-12 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-12">
@@ -36,6 +36,27 @@
                     </svg>
                 </div>
             </div>
+            <div class="flex justify-start pt-6"><!--Example hospital-->
+                <div class="rounded-full mx-2 w-12 h-12 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-12">
+                        <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>                  
+                </div>
+                <div class="w-64 scroll-auto bg-whiteb text-dark px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
+                    You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:rounded-lg to apply the rounded-lg utility at only medium screen sizes and above.
+                   
+                </div>
+            </div>
+            <div class="flex justify-end pt-6"><!--Example patient-->
+                <div class="w-64 scroll-auto bg-whiteb text-dark rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
+                You can also use variant modifiers to target media queries like responsivre. For example, use  only medium screen sizes and above.
+            </div>
+            <div class="rounded-full mx-2 w-12 h-12 bg-whiteb flex items-center justify-center"><!--Ikona-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+            </div>
+        </div>
         </div>
         <div class="h-[8vh] py-[1vh] bg-gray-800 flex"><!--MSG field-->
             <input class="bg-whiteb bg-clip-padding bg-no-repeat h-[6vh] md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
