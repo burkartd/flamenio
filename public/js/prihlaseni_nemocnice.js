@@ -7,9 +7,10 @@ const idInput = document.getElementById("id_input");
 const passwordInput = document.getElementById("password_input");
 const btnSubmit = document.getElementById("btn_submit");
 
-
+console.log(isNumeric(5))
 btnSubmit.addEventListener('click', () => {
 
+    console.log('wdwd')
     let inputIDnum = idInput.value.trim();
     // var regExp = /[0-9]/;
     if (inputIDnum.length < 1 || isNumeric(inputIDnum) === false) {
