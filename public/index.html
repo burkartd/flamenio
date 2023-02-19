@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galenio - Bouráme jazykovou bariéru ve zdravotnictví</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
 </head>
 <body>
     <div class="h-screen w-screen bg-dark font-poppins grid grid-cols-12 grid-rows-10"><!--Full stranka-->
@@ -18,19 +20,19 @@
             </h2>
         </div>
         <div class="col-start-2 col-span-10 h-[60vh]"><!--Form-->
-            <form class="pt-6">
+            <form id="login_form" class="pt-6">
 
-                <input class="bg-whiteb bg-clip-padding bg-no-repeat md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                <input id="id_input" class="bg-whiteb bg-clip-padding bg-no-repeat md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
                 border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
                 text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
                 maxlength="30" placeholder="ID místnosti" required>
 
-                <input class="bg-whiteb bg-clip-padding bg-no-repeat mt-4 md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                <input id="password_input" class="bg-whiteb bg-clip-padding bg-no-repeat mt-4 md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
                 border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
                 text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
                 maxlength="30" placeholder="Heslo" required>
 
-                <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                <button type="button" id="btn_submit" class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
                         Připojit se
                 </button>
                 
@@ -43,5 +45,8 @@
         </div>
 
     </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+    
 </body>
 </html>
