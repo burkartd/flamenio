@@ -41,7 +41,7 @@
                 <input class="bg-whiteb bg-clip-padding bg-no-repeat mt-4 md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
                 border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
                 text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
-                maxlength="20" placeholder="Rodné číslo">
+                maxlength="20" placeholder="Datum narození">
 
                 <div class="relative">
                     <select class="form-select appearance-none h-[7vh]
@@ -69,7 +69,16 @@
                         </svg>
                     </span>
                 </div>
-
+                <div class="flex items-center mt-2 md:mt-4 lg:mt-6 justify-start md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                    <div class="flex items-center mr-8">
+                        <input checked id="default-radio-1" type="radio" value="" name="default-radio" class="w-6 h-6 text-whiteb bg-rosen border-rosen focus:ring-dark focus:ring-2">
+                        <label for="default-radio-1" class="ml-2 text-sm font-medium text-whiteb">Nemám pojištění</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-6 h-6 text-rosen bg-blu border-gray-300 focus:ring-dark focus:ring-2">
+                        <label for="default-radio-2" class="ml-2 text-sm font-medium text-whiteb">Mám platné pojištění</label>
+                    </div>
+                </div>
                 <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
                         Další krok
                 </button>
