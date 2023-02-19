@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galenio - Bouráme jazykovou bariéru ve zdravotnictví</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+</head>
+<body>
+    <div class="h-screen w-screen bg-dark grid grid-cols-12 grid-rows-10 font-poppins"><!--Full stranka-->
+        <div class="absolute rounded-full bg-rosen stroke-whiteb top-[90px] right-12 h-16 w-16 flex items-center justify-center"><!--Close button-->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="whiteb" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <form class="col-start-2 col-span-10 justify-center mt-[20%]"><!--vyber actual-->
+            <div class="flex mt-4 flex items-center justify-center">
+                    <div class="mb-3 itemscenter w-[100%] md:w-[70%] lg:w-[50%]">
+                      <select class="form-select appearance-none h-[7vh]
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        text-dark
+                        bg-whiteb bg-clip-padding bg-no-repeat
+                        border border-solid border-dark
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                          <option selected>Select your language</option>
+                          <option value="1">Čeština</option>
+                          <option value="2">Němčina</option>
+                          <option value="3">Angličtina</option>
+                      </select>
+                    </div>
+            </div>
+            <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                Change
+            </button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
