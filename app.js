@@ -37,7 +37,45 @@ process.on('uncaughtException', err => {
 io.on('connection', socket => {
     console.log('nové připjení');
 
-    socket.on('hostConnect', (data) => {
-        
+    socket.on('checkRoom', (num, cb) => {
+        const roomtest = 'room' + num;        
+        const roomExists = io.sockets.adapter.rooms.has(roomtest);
+        // var jmenook = true;
+        // if(roomExists)
+        // {
+        //     const roomi = rooms.findIndex(tmp => tmp.roomName === roomtest);
+        //     console.log(rooms[roomi]);
+        //     const zaki = rooms[roomi].userList.findIndex(zak => zak.userName === jmeno);
+        //     if(zaki !== -1) jmenook = false;
+        // }
+        cb(
+            {
+                roomExists: roomExists
+            }
+        );
+    });
+
+
+
+    socket.on('hostConnect', chatId, (cb) => {
+        const user = { //novy
+            username: 'host',
+            role: 'host',
+            id: socket.id,
+            roomnumber: chatId
+        };
+
+        const roomObj = { //nová roomka
+            host: user,
+            userList: [],
+            roomName: room,
+            usersCount: 0
+        };
+
+        rooms.push(roomObj);
+        roomsCount++;
+
+        cb(true);
+
     })
 })
