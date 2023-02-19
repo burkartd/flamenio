@@ -738,6 +738,10 @@ video {
   margin-right: 2rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -888,6 +892,22 @@ video {
 
 .h-\[50\%\]{
   height: 50%;
+}
+
+.h-\[35vh\]{
+  height: 35vh;
+}
+
+.h-\[32vh\]{
+  height: 32vh;
+}
+
+.h-\[18vh\]{
+  height: 18vh;
+}
+
+.h-\[30vh\]{
+  height: 30vh;
 }
 
 .w-16{
@@ -1309,6 +1329,10 @@ video {
 
 .text-\[24px\]{
   font-size: 24px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
 }
 
 .font-semibold{
