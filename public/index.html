@@ -10,6 +10,7 @@
     <!-- <script src="/socket.io/socket.io.js"></script> -->
 </head>
 <body>
+    <div id="index1" class="">
     <div class="h-screen w-screen bg-dark grid grid-cols-12 grid-rows-10 font-poppins"><!--Full stranka-->
         <div class="col-start-2 col-span-10 h-[15vh] flex justify-center items-end"><!--nadpis-->
                 <h2 class="text-[56px] font-poppins font-semibold text-center text-whiteb md:text-[80px]">
@@ -49,7 +50,7 @@
                       </select>
                     </div>
             </div>
-            <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+            <button id="index1continue" class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
                 Continue
             </button>
         </form>
@@ -57,7 +58,7 @@
             <div class="text-whiteb font-light text-xl flex text-center justify-center">
                 Galenio is there to help you with communication in hospitals. 
             </div>
-            <div class="mt-6 text-rosen underline font-medium text-lg flex justify-center">
+            <div id="login_to_dashboard" class="mt-6 text-rosen underline font-medium text-lg flex justify-center">
                 Login to dashboard
             </div>
         </div>
@@ -69,8 +70,253 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="index2" class="hidden">
+    <div class="h-screen w-screen bg-dark grid grid-cols-12 font-poppins"><!--Full stranka-->
+        <div class="col-start-2 col-span-10 h-[14vh] flex justify-center items-end"><!--nadpis-->
+            <h4 class="text-xl font-poppins font-medium text-center text-whiteb px-0 md:text-2xl lg:text-3xl">
+                Vyplňte nám prosím údaje, 
+                ať víme s kým komunikujeme
+            </h4>
+        </div>
+        <div class="col-start-2 col-span-10 h-[16vh] flex justify-center items-end"><!--Help site link-->
+            <div>
+                <div class="mt-6 text-whiteb font-light text-lg flex text-center justify-center md:text-xl">
+                    Galenio is there to help you with communication in hospitals. 
+                </div>
+                <div class="mt-2 text-rosen underline font-medium text-md flex justify-center md:text-lg">
+                    Want to know more?
+                </div>
+            </div>
+        </div>
+        <div class="col-start-2 col-span-10 h-[50vh]"><!--Form-->
+            <form class="pt-6">
+
+                <input class="bg-whiteb bg-clip-padding bg-no-repeat md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
+                text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
+                maxlength="30" placeholder="Jméno - povinné" required>
+
+                <input class="bg-whiteb bg-clip-padding bg-no-repeat mt-4 md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
+                text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
+                maxlength="30" placeholder="Příjmení - povinné" required>
+
+                <input class="bg-whiteb bg-clip-padding bg-no-repeat mt-4 md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                border border-solid border-dark h-[7vh] appearance-none rounded w-full text-base
+                text-dark py-2 px-4 leading-tight focus:outline-none focus:bg-whiteb focus:border-rosen" id="full-name" type="text" 
+                maxlength="20" placeholder="Datum narození">
+
+                <div class="relative">
+                    <select class="form-select appearance-none h-[7vh]
+                        block
+                        w-full md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]
+                        px-3
+                        py-1.5
+                        text-base
+                        text-dark
+                        bg-whiteb bg-clip-padding bg-no-repeat
+                        border border-solid border-dark
+                        rounded
+                        transition
+                        ease-in-out
+                        mt-4
+                        focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                          <option selected>Státní příslušnost</option>
+                          <option value="1">Česká republika</option>
+                          <option value="2">Něměcká spolková republika</option>
+                          <option value="3">Polská republika</option>
+                    </select>
+                    <span class="pointer-events-none absolute inset-y-0 right-0 ml-3 flex md:w-[20%]  lg:w-[28%] items-center pr-2">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="flex items-center mt-2 md:mt-4 lg:mt-6 justify-start md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                    <div class="flex items-center mr-8">
+                        <input checked id="default-radio-1" type="radio" value="" name="default-radio" class="w-6 h-6 text-whiteb bg-rosen border-rosen focus:ring-dark focus:ring-2">
+                        <label for="default-radio-1" class="ml-2 text-sm font-medium text-whiteb">Nemám pojištění</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-6 h-6 text-rosen bg-blu border-gray-300 focus:ring-dark focus:ring-2">
+                        <label for="default-radio-2" class="ml-2 text-sm font-medium text-whiteb">Mám platné pojištění</label>
+                    </div>
+                </div>
+                <button id="index2continue" class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[70%] md:ml-[15%] lg:w-[50%] lg:ml-[25%]">
+                        Další krok
+                </button>
+                
+            </form>
+        </div>
+        <div class="col-start-2 col-span-10 h-[20vh] text-center lg:col-start-1"><!--Chat icon-->
+            <div class="rounded-full bg-rosen h-24 w-24 mt-[8%] stroke-whiteb flex items-center justify-center lg:ml-12 lg:mt-[4%]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" class="w-16">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="index3" class="hidden">
+    <div class="h-screen w-screen bg-dark font-poppins grid grid-cols-12 grid-rows-10"><!--Full stranka-->
+        <div class="col-start-2 col-span-10 text-[26px] font-semibold text-center text-whiteb md:text-[60px] h-[25vh] pt-[10vh] lg:pt-[5vh] items-end"><!--nadpis nemocnice-->
+            <div ><h1>Vítejte v</h1></div> 
+            <div ><h1>Nemocnici Tišnov a.s.</h1></div>
+        </div>
+        <div class="col-start-2 col-span-10 font-regular text-lg text-whiteb h-[10vh]"><!--udaje pacienta-->
+            <div class="flex justify-center items-end">
+                <span class="pr-4">Karel Lahváček</span>
+                <span>010101/3434</span>
+            </div>
+            <div class="flex justify-center items-end">
+                <span>Česká republika</span>
+            </div> 
+        </div>
+        <div class="col-start-2 col-span-10 h-[45vh]"> <!--hlavni formular-->
+            <form class="pt-6">
+                <textarea
+                class="
+                    lg:w-[50%] lg:ml-[25%]
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  md:text-lg
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0 
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="exampleFormControlTextarea1"
+                rows="7"
+                placeholder="Your message"
+                required
+                ></textarea>
+                <button id="index3send" class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[100%] md:ml-[0%] lg:w-[50%] lg:ml-[25%]">
+                        Odeslat
+                </button>
+                
+            </form>
+            <button class="bg-rosen h-[7vh] w-[100%] rounded-lg text-whiteb mt-4 flex items-center justify-center md:w-[100%] md:ml-[0%] lg:w-[50%] lg:ml-[25%]">
+                Slovníček
+        </button>
+        </div>
+        <div class="col-start-2 col-span-4 h-[20vh] text-center  lg:col-start-1"><!--Chat icon-->
+            <div class="rounded-full bg-rosen h-24 w-24 mt-[5%] stroke-whiteb flex items-center justify-center lg:ml-12 lg:mt-[4%]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" class="w-16">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+            </div>
+        </div>
+        <div class="pt-8 col-start-7 col-span-4 h-[20vh] lg:col-start-8">
+            <a class="flex items-center md:justify-end">
+            <span>
+                <img src="./img/cz.png" class="h-12">
+            </span>
+            <span class="text-whiteb pl-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                </svg>
+            </span>
+            </a>
+        </div>
+        <div class="hidden absolute rounded-lg bg-whiteb stroke-whiteb flex top-[15%] right-[5%] h-[70%] w-[90%] items-center justify-center"><!--Form incoming-->
+            <form class="py-4 px-4 bg-whiteb rounded-xl h-full w-full">
+                <div class="flex pt-8 justify-between ">
+                    <span class="text-xl text-dark">
+                        Formulář alergie
+                    </span>
+                    <button class="text-lg text-dark hover:text-rosen underline">
+                        Zavřít
+                    </button>
+                </div>
+                    <div class="pt-6">
+                        <textarea
+                        class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-2
+                        text-base
+                        font-normal
+                        text-dark
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded-xl
+                        transition
+                        ease-in-out
+                        m-0 
+                        focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
+                        "
+                        id="exampleFormControlTextarea1"
+                        rows="8"
+                        value=""
+                        required
+                        placeholder="Jaké máte alergie?"
+                        ></textarea>                      
+                    </div>
+                    <div class="pt-6">
+                        <textarea
+                        class="
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-2
+                        text-base
+                        font-normal
+                        text-dark
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded-xl
+                        transition
+                        ease-in-out
+                        m-0 
+                        focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
+                        "
+                        id="exampleFormControlTextarea1"
+                        rows="8"
+                        value=""
+                        required
+                        placeholder="Kdy jste měli naposledy alergickou reakci?"
+                        ></textarea>                      
+                    </div>
+            </form>
+        </div>
+
+        <div class="hidden absolute rounded-lg bg-whiteb stroke-whiteb top-[25%] right-[5%] h-[50%] w-[90%] items-start justify-center"><!--Oznámení incoming-->
+            <div class="flex pt-8 px-6 justify-between">
+                <span class="text-xl text-dark">
+                    Oznámení z nemocnice:
+                </span>
+                <button class="text-lg text-dark hover:text-rosen underline">
+                    Zavřít
+                </button>
+            </div>
+            <div class="px-6 mt-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat nisl in ullamcorper semper. Maecenas sit amet sapien dignissim mauris mollis congue eget quis ipsum. Nam sagittis sapien dui, suscipit egestas augue lacinia ut. Sed fringilla dui ut eros consequat ultrices. Nullam nisl augue, ornare nec lorem eu, condimentum viverra velit. Morbi sollicitudin tincidunt hendrerit. Nullam auctor leo eu cursus dapibus. Nullam ac quam libero.
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="./js/index.js"></script>
     
 </body>
+<script src="indexhtml.js"></script>
+<script src="./js/index.js"></script>
+
 </html>
