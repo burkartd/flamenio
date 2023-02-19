@@ -172,7 +172,7 @@
                           transition
                           ease-in-out
                           m-0 
-                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                          focus:text-gray-700 focus:bg-white focus:border-blu focus:outline-none
                         "
                         id="exampleFormControlTextarea1"
                         rows="5"
@@ -191,8 +191,8 @@
             </div>
 
         </div>
-        <div class="col-start-4 col-span-6 row-start-2 row-span-6 bg-whiteb"><!--Middle part-->
-            <div class="w-[80%] ml-[10%] h-[70%] bg-blu rounded-xl"><!--chat-->
+        <div class="col-start-4 col-span-6 row-start-2 row-span-6 bg-whiteb overflow-auto scrollbar"><!--Middle part-->
+            <div class="w-[80%] ml-[10%] h-[70%] bg-dark rounded-xl bg-opacity-10	"><!--chat-->
                 <div class="px-4  h-[90%] overflow-auto scrollbar rounded-xl"><!--Chat-->
                     <div class="flex justify-start pt-6"><!--Example hospital-->
                         <div class="rounded-full mx-2 w-12 h-12 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
@@ -200,13 +200,13 @@
                                 <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
                             </svg>                  
                         </div>
-                        <div class="w-64 scroll-auto bg-whiteb text-dark px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
+                        <div class="w-64 scroll-auto bg-dark text-whiteb px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
                             You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:rounded-lg to apply the rounded-lg utility at only medium screen sizes and above.
                            
                         </div>
                     </div>
                     <div class="flex justify-end pt-6"><!--Example patient-->
-                            <div class="w-64 scroll-auto bg-whiteb text-dark rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
+                            <div class="w-64 scroll-auto bg-dark text-whiteb rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
                             You can also use variant modifiers to target media queries like responsivre. For example, use  only medium screen sizes and above.
                         </div>
                         <div class="rounded-full mx-2 w-12 h-12 bg-whiteb flex items-center justify-center"><!--Ikona-->
@@ -221,13 +221,13 @@
                                 <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
                             </svg>                  
                         </div>
-                        <div class="w-64 scroll-auto bg-whiteb text-dark px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
+                        <div class="w-64 scroll-auto bg-dark text-whiteb px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
                             You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:rounded-lg to apply the rounded-lg utility at only medium screen sizes and above.
                            
                         </div>
                     </div>
                     <div class="flex justify-end pt-6"><!--Example patient-->
-                        <div class="w-64 scroll-auto bg-whiteb text-dark rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
+                        <div class="w-64 scroll-auto bg-dark text-whiteb rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
                         You can also use variant modifiers to target media queries like responsivre. For example, use  only medium screen sizes and above.
                     </div>
                     <div class="rounded-full mx-2 w-12 h-12 bg-whiteb flex items-center justify-center"><!--Ikona-->
@@ -240,7 +240,7 @@
                 <div class=" h-[10%] flex items-center"><!--MSG field-->
                     <input class="bg-white bg-clip-padding bg-no-repeat h-[70%] ml-[5%]
                         border border-solid border-none appearance-none rounded-2xl w-[80%]  text-base
-                        text-dark py-2 px-4 leading-tight focus:outline-none focus:border-rosen" id="full-name" type="text" 
+                        text-dark pl-2 pr-12 px-4 leading-tight focus:outline-none focus:border-rosen" id="full-name" type="text" 
                         maxlength="300" placeholder="Message..." required>
                     <button class="bg-rosen hover:bg-whiteb w-[10%] h-[70%] rounded-2xl ml-[-5%] flex items-center justify-center stroke-whiteb hover:stroke-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6">
@@ -249,12 +249,180 @@
                     </button>
                 </div>
             </div>
-            <div><!--Forms-->
+            <div class="w-[80%] ml-[10%] flex mb-4"><!--Forms-->
+                <form class="mt-6 py-4 px-4 bg-dark rounded-xl w-[48%] mr-[2%]"><!--Form alergie-->
+                    <div class="flex justify-between ">
+                        <span class="text-lg text-whiteb">
+                            Formulář alergie
+                        </span>
+                        <button class="text-base text-whiteb hover:text-rosen underline">
+                            Poslat
+                        </button>
+                    </div>
+                        <div class="pt-6">
+                            <textarea
+                            class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-2
+                            text-base
+                            font-normal
+                            text-dark
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded-xl
+                            transition
+                            ease-in-out
+                            m-0 
+                            focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
+                            "
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            value=""
+                            required
+                            >Jaké máte alergie?</textarea>                      
+                        </div>
+                        <div class="pt-6">
+                            <textarea
+                            class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-2
+                            text-base
+                            font-normal
+                            text-dark
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded-xl
+                            transition
+                            ease-in-out
+                            m-0 
+                            focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
+                            "
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            value=""
+                            required
+                            >Kdy jste měli naposledy alergickou reakci?</textarea>                      
+                        </div>
+                </form>
+
+                <form class="mt-6 py-4 px-4 bg-dark rounded-xl w-[48%] ml-[2%]"> <!--Additional form-->
+                    <div class="flex justify-between ">
+                        <span class="text-lg text-whiteb">
+                            Formulář doplňující
+                        </span>
+                        <button class="text-base text-whiteb hover:text-rosen underline">
+                            Poslat
+                        </button>
+                    </div>
+                        <div class="pt-6">
+                            <textarea
+                            class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-2
+                            text-base
+                            font-normal
+                            text-dark
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded-xl
+                            transition
+                            ease-in-out
+                            m-0 
+                            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                            "
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            value=""
+                            required
+                            >Jak se vám stal úraz?</textarea>                      
+                        </div>
+                        <div class="pt-6">
+                            <textarea
+                            class="
+                            form-control
+                            block
+                            w-full
+                            px-3
+                            py-2
+                            text-base
+                            font-normal
+                            text-dark
+                            bg-white bg-clip-padding
+                            border border-solid border-gray-300
+                            rounded-xl
+                            transition
+                            ease-in-out
+                            m-0 
+                            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                            "
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            value=""
+                            required
+                            >Kde přesně se vám úraz stal?</textarea>                      
+                        </div>
+                </form>
+
 
             </div>
         </div>
         <div class="col-start-10 col-span-3 row-start-1 row-span-6 bg-dark"><!--Info nemocnice-->
-ingo
+            <div class="px-8 pt-24 text-whiteb h-[40%]"><!--base info-->
+                <div class="rounded-full mx-2 w-28 h-28 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-18">
+                        <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>                  
+                </div>
+                <h2 class="pt-4 text-xl font-medium">Jaroslav Novák</h2>
+                <h4 class="pt-2 text-base font-normal">recepční</h4>
+
+                <div class="text-base pt-8"> +420 606 606 066</div>
+                <div class="text-base"> jaroslav@nemocnicetisnov.cz</div>
+            </div>
+            <div class="px-8 text-whiteb pt-8 h-[40%]"><!--Oddeleni-->
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 1</h4>
+                    <div class="py-2">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 2</h4>
+                    <div class="py-2 hidden">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 3</h4>
+                    <div class="py-2 hidden ">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[15%]"><!--slovnicek-->
+                <button class="bg-rosen h-[6vh] w-[80%] ml-6 rounded-lg text-whiteb mt-4 flex items-center justify-center">
+                    Slovníček
+                </button>
+            </div>
         </div>
     </div>
 </body>

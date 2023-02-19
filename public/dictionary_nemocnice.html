@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 <body>
-    <div class="h-screen w-screen bg-whiteb grid grid-cols-12 grid-rows-10 font-poppins"><!--Full stranka mobil-->
-        <div class="bar-nav col-start-1 col-span-12 h-[80px]"><!--Menu mobilni, stejny vsude-->      
+    <div class="h-screen w-screen bg-whiteb grid grid-cols-12 lg:hidden grid-rows-10 font-poppins"><!--Full stranka mobil-->
+        <div class="bar-nav col-start-1 col-span-12 h-[80px] "><!--Menu mobilni, stejny vsude-->      
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
                 <div class="hamburger"><div></div></div>
@@ -68,131 +68,28 @@
                   } 
             </script>
         </div>
-
-        <div class="col-start-2 col-span-10 mt-[80px]"><!--Obsah stranky - formuláře--> 
-            <form class="mt-6 py-4 px-4 bg-dark rounded-xl">
-                <div class="flex justify-between ">
-                    <span class="text-xl text-whiteb">
-                        Formulář alergie
-                    </span>
-                    <button class="text-lg text-whiteb hover:text-rosen underline">
-                        Poslat
-                    </button>
+        <div class="col-start-2 col-span-10 h-[50vh] text-dark mt-[80px]"><!--Obsah stranky - profil pacienta--> 
+            <h1 class="text-[34px] pb-2 pt-8 font-semibold"><!--Jmeno-->
+                Karel Pacient
+            </h1>
+            <div class="text-xl pb-2 font-medium"><!--Info-->
+                <span class="flex py-2"><!--Jazyk-->
+                    Polska republika<img src="./img/pl.png" class="ml-2 h-6">
+                </span>
+                <div class="flex py-2"><!--ID-->
+                    122020/2002
                 </div>
-                    <div class="pt-6">
-                        <textarea
-                        class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-2
-                        text-base
-                        font-normal
-                        text-dark
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded-xl
-                        transition
-                        ease-in-out
-                        m-0 
-                        focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
-                        "
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        value=""
-                        required
-                        >Jaké máte alergie?</textarea>                      
-                    </div>
-                    <div class="pt-6">
-                        <textarea
-                        class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-2
-                        text-base
-                        font-normal
-                        text-dark
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded-xl
-                        transition
-                        ease-in-out
-                        m-0 
-                        focus:text-gray-700 focus:bg-white focus:border-dark focus:outline-none
-                        "
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        value=""
-                        required
-                        >Kdy jste měli naposledy alergickou reakci?</textarea>                      
-                    </div>
-            </form>
-
-            <form class="mt-6 py-4 px-4 bg-dark rounded-xl">
-                <div class="flex justify-between ">
-                    <span class="text-xl text-whiteb">
-                        Formulář doplňující
-                    </span>
-                    <button class="text-lg text-whiteb hover:text-rosen underline">
-                        Poslat
-                    </button>
+                <div class="flex py-2"><!--Mail-->
+                    karelpacient@gmail.com
                 </div>
-                    <div class="pt-6">
-                        <textarea
-                        class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-2
-                        text-base
-                        font-normal
-                        text-dark
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded-xl
-                        transition
-                        ease-in-out
-                        m-0 
-                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        "
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        value=""
-                        required
-                        >Jak se vám stal úraz?</textarea>                      
-                    </div>
-                    <div class="pt-6">
-                        <textarea
-                        class="
-                        form-control
-                        block
-                        w-full
-                        px-3
-                        py-2
-                        text-base
-                        font-normal
-                        text-dark
-                        bg-white bg-clip-padding
-                        border border-solid border-gray-300
-                        rounded-xl
-                        transition
-                        ease-in-out
-                        m-0 
-                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                        "
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        value=""
-                        required
-                        >Kde přesně se vám úraz stal?</textarea>                      
-                    </div>
-            </form>
+                <div class="flex py-2"><!--Mobile-->
+                    605 111 235
+                </div>
+                <div class="flex text-lg py-2 hover:text-blu text-rosen underline"><!--Mobile-->
+                    Odebrat pacienta z místnosti
+                </div>
+            </div>
         </div>
-
         <div class="fixed left-0 bottom-0 z-50 mb-4 ml-4"><!--Mobile chat-->
             <div><!--Chat icon-->
                 <div class="rounded-full bg-dark h-24 w-24 stroke-whiteb flex items-center justify-center lg:ml-12 lg:mt-[4%]">
@@ -204,5 +101,76 @@
         </div>
     </div>
 
+    <div class="h-screen w-screen bg-whiteb font-poppins md:grid hidden grid-cols-12 grid-rows-6"><!--Full stranka pocitac-->
+        <div class="col-start-1 col-span-9 row-start-1 text-dark row-span-1 bg-whiteb flex justify-between p-8"><!--Nazev + jazyk-->
+            <div>
+                <h1 class="text-[38px] font-semibold">Nemocnice Tišnov a.s.</h1>
+                <span class="font-medium">galenio.com/chat12</span>
+            </div>
+            <div>
+                <a class="flex items-center md:justify-end">
+                <span>
+                    <img src="./img/cz.png" class="h-12">
+                </span>
+                <span class="text-dark pl-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                </span>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="col-start-10 col-span-3 row-start-1 row-span-6 bg-dark"><!--Info nemocnice-->
+            <div class="px-8 pt-24 text-whiteb h-[40%]"><!--base info-->
+                <div class="rounded-full mx-2 w-28 h-28 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-18">
+                        <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>                  
+                </div>
+                <h2 class="pt-4 text-xl font-medium">Jaroslav Novák</h2>
+                <h4 class="pt-2 text-base font-normal">recepční</h4>
+
+                <div class="text-base pt-8"> +420 606 606 066</div>
+                <div class="text-base"> jaroslav@nemocnicetisnov.cz</div>
+            </div>
+            <div class="px-8 text-whiteb pt-8 h-[40%]"><!--Oddeleni-->
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 1</h4>
+                    <div class="py-2">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 2</h4>
+                    <div class="py-2 hidden">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 3</h4>
+                    <div class="py-2 hidden ">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[15%]"><!--slovnicek-->
+                <button class="bg-rosen h-[6vh] w-[80%] ml-6 rounded-lg text-whiteb mt-4 flex items-center justify-center">
+                    Hlavní stránka
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
