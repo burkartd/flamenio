@@ -57,7 +57,7 @@ io.on('connection', socket => {
 
 
 
-    socket.on('hostConnect', chatId, (cb) => {
+    socket.on('hostConnect', (chatId, cb) => {
         const user = { //novy
             username: 'host',
             role: 'host',
