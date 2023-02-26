@@ -199,56 +199,17 @@
         </div>
         <div class="col-start-4 col-span-6 row-start-2 row-span-6 bg-whiteb overflow-auto scrollbar"><!--Middle part-->
             <div class="w-[80%] ml-[10%] h-[70%] bg-dark rounded-xl bg-opacity-10	"><!--chat-->
-                <div class="px-4  h-[90%] overflow-auto scrollbar rounded-xl"><!--Chat-->
-                    <div class="flex justify-start pt-6"><!--Example hospital-->
-                        <div class="rounded-full mx-2 w-12 h-12 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-12">
-                                <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>                  
-                        </div>
-                        <div class="w-64 scroll-auto bg-dark text-whiteb px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
-                            You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:rounded-lg to apply the rounded-lg utility at only medium screen sizes and above.
-                           
-                        </div>
-                    </div>
-                    <div class="flex justify-end pt-6"><!--Example patient-->
-                            <div class="w-64 scroll-auto bg-dark text-whiteb rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
-                            You can also use variant modifiers to target media queries like responsivre. For example, use  only medium screen sizes and above.
-                        </div>
-                        <div class="rounded-full mx-2 w-12 h-12 bg-whiteb flex items-center justify-center"><!--Ikona-->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="flex justify-start pt-6"><!--Example hospital-->
-                        <div class="rounded-full mx-2 w-12 h-12 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-12">
-                                <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>                  
-                        </div>
-                        <div class="w-64 scroll-auto bg-dark text-whiteb px-4 py-2 rounded-tr-xl rounded-b-xl"><!--Samotna zprava-->
-                            You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:rounded-lg to apply the rounded-lg utility at only medium screen sizes and above.
-                           
-                        </div>
-                    </div>
-                    <div class="flex justify-end pt-6"><!--Example patient-->
-                        <div class="w-64 scroll-auto bg-dark text-whiteb rounded-tl-xl rounded-b-xl px-4 py-2"><!--Samotna zprava-->
-                        You can also use variant modifiers to target media queries like responsivre. For example, use  only medium screen sizes and above.
-                    </div>
-                    <div class="rounded-full mx-2 w-12 h-12 bg-whiteb flex items-center justify-center"><!--Ikona-->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                        </svg>
-                    </div>
-                </div>
+                <div id="main_chat" class="px-4  h-[90%] overflow-auto scrollbar rounded-xl"><!--Chat-->
+                    
+                    
+                    
                 </div>
                 <div class=" h-[10%] flex items-center"><!--MSG field-->
-                    <input class="bg-white bg-clip-padding bg-no-repeat h-[70%] ml-[5%]
+                    <input id="chat_input" class="bg-white bg-clip-padding bg-no-repeat h-[70%] ml-[5%]
                         border border-solid border-none appearance-none rounded-2xl w-[80%]  text-base
-                        text-dark pl-2 pr-12 px-4 leading-tight focus:outline-none focus:border-rosen" id="full-name" type="text" 
+                        text-dark pl-2 pr-12 px-4 leading-tight focus:outline-none focus:border-rosen" type="text" 
                         maxlength="300" placeholder="Message..." required>
-                    <button class="bg-rosen hover:bg-whiteb w-[10%] h-[70%] rounded-2xl ml-[-5%] flex items-center justify-center stroke-whiteb hover:stroke-dark">
+                    <button id="chat_btn_send" class="bg-rosen hover:bg-whiteb w-[10%] h-[70%] rounded-2xl ml-[-5%] flex items-center justify-center stroke-whiteb hover:stroke-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                         </svg>                  

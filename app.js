@@ -68,7 +68,7 @@ io.on('connection', socket => {
         const roomObj = { //nová roomka
             host: user,
             userList: [],
-            roomName: room,
+            roomName: chatId,
             usersCount: 0
         };
 
