@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galenio - Bouráme jazykovou bariéru ve zdravotnictví</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body>
+    <div class="h-screen w-screen bg-whiteb grid grid-cols-12 lg:hidden grid-rows-10 font-poppins"><!--Full stranka mobil-->
+        <div class="bar-nav col-start-1 col-span-12 h-[80px] "><!--Menu mobilni, stejny vsude-->      
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                        <div>
+                        <div class="change">
+                            <ul>
+                            <li>
+                                <a href="" onclick="checkAll()" class="flex text-[22px] font-regular items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 mr-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>                                      
+                                    Profil pacienta
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="" onclick="checkAll()" class="flex text-[22px] font-regular items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 mr-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                                    </svg>                                     
+                                    Posílání formulářů
+                                </a>
+                            </li>
+                            
+                            
+                            <li>
+                                <a href="" onclick="checkAll()" class="flex text-[22px] font-regular items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 mr-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>                                      
+                                    Profil místnosti
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" onclick="checkAll()" class="flex text-[22px] font-regular items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 mr-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                                      </svg>                                     
+                                    Slovníček
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                  function checkAll() {
+                      var inputs = document.querySelectorAll('.toggler'); 
+                      for (var i = 0; i < inputs.length; i++) {
+                          inputs[i].checked = false; 
+                      } 
+                  } 
+            </script>
+        </div>
+
+        <div class="col-start-2 col-span-10 h-[80vh] text-dark mt-[80px] pt-8"><!--Obsah stranky - slovnicek detail--> 
+                <div class="flex items-center h-[10%]"><!--Nadpis kategorie-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 sm:w-10 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                    <h1 class="ml-2 sm:ml-6 text-xl sm:text-3xl font-medium">Introductions</h1>
+                    <div class="ml-auto w-1/3">
+                        <select class="form-select appearance-none 
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        sm:text-lg
+                        text-sm
+                        text-dark
+                        bg-whiteb bg-clip-padding bg-no-repeat
+                        rounded
+                        m-0
+                        focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                            <option selected>Vyber jazyk </option>
+                            <option value="1">Čeština</option>
+                            <option value="2">Němčina</option>
+                            <option value="3">Angličtina</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-4 h-9/10 overflow-auto scrollbar"><!--Fraze samotne-->
+                        <div class="w-full text-dark px-[2%]"><!--Jedna fraze-->
+                            <div class="text-base sm:text-xl border-b-2 border-dark py-2 flex justify-between cursor-pointer"><!--Originalni text-->
+                                <span class="pl-4">
+                                    Hello
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 sm:w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                                
+                            </div>
+                            <span class="flex text-base sm:text-xl justify-between pl-4 my-2"><!--Preklad do jazyka vybraneho nahore-->
+                                Ahoj
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 sm:w-6 cursor-pointer ml-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                            </svg>
+                            
+                            </span>
+                        </div>
+                        <div class="w-full text-dark px-[2%]"><!--Jedna fraze-->
+                            <div class="text-base sm:text-xl border-b-2 border-dark py-2 flex justify-between cursor-pointer"><!--Originalni text-->
+                                <span class="pl-4">
+                                    Hello
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 sm:w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                                
+                            </div>
+                        </div>
+                        <div class="w-full text-dark px-[2%]"><!--Jedna fraze-->
+                            <div class="text-base sm:text-xl border-b-2 border-dark py-2 flex justify-between cursor-pointer"><!--Originalni text-->
+                                <span class="pl-4">
+                                    Hello
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 sm:w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                                
+                            </div>
+                        </div>
+    
+                </div>
+            
+        </div>
+        <div class="fixed left-0 bottom-0 z-50 mb-4 ml-4"><!--Mobile chat-->
+            <div><!--Chat icon-->
+                <div class="rounded-full bg-dark h-24 w-24 stroke-whiteb flex items-center justify-center lg:ml-12 lg:mt-[4%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" class="w-16">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="h-screen w-screen bg-whiteb font-poppins lg:grid hidden grid-cols-12 grid-rows-6"><!--Full stranka pocitac-->
+        <div class="col-start-1 col-span-9 row-start-1 text-dark row-span-1 bg-whiteb flex justify-between p-8"><!--Nazev + jazyk-->
+            <div>
+                <h1 class="text-[38px] font-semibold">Nemocnice Tišnov a.s.</h1>
+                <span class="font-medium">galenio.com/chat12</span>
+            </div>
+            <div>
+                <a class="flex items-center md:justify-end">
+                <span>
+                    <img src="./img/cz.png" class="h-12">
+                </span>
+                <span class="text-dark pl-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-start-1 col-span-9 row-start-2 px-[8%] row-span-5"><!--Detail slovnicku-->
+            <div class="flex items-center h-[10%]"><!--Nadpis kategorie-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-10 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                <h1 class="ml-6 text-3xl font-medium">Introductions</h1>
+                <div class="ml-auto w-1/4">
+                    <select class="form-select appearance-none 
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    text-dark
+                    bg-whiteb bg-clip-padding bg-no-repeat
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                    <option selected>Vyber jazyk 
+                    </option>
+                        <option value="1">Čeština</option>
+                        <option value="2">Němčina</option>
+                        <option value="3">Angličtina</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-4 h-9/10 overflow-auto scrollbar"><!--Fraze samotne-->
+                <div class="flex"><!--Radek-->
+                    <div class="w-1/2 text-dark px-[2%]"><!--Jedna fraze-->
+                        <div class="text-xl border-b-2 border-dark py-2 flex justify-between cursor-pointer">
+                            <span class="pl-4">
+                                Hello
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            
+                        </div>
+                        <span class="flex text-xl justify-between pl-4 my-2">
+                            Ahoj
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 cursor-pointer ml-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                        </svg>
+                        
+                        </span>
+                    </div>
+                    <div class="w-1/2 text-dark px-[2%]"><!--Jedna fraze-->
+                        <div class="text-xl border-b-2 border-dark py-2 flex justify-between cursor-pointer">
+                            <span class="pl-4">
+                                Hello
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                            
+                        </div>
+                        <span class="flex text-xl justify-between pl-4 my-2">
+                            Ahoj
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 cursor-pointer ml-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                        </svg>
+                        
+                        </span>
+                    </div>
+                </div> 
+                
+
+            </div>
+        </div>
+
+        
+
+        
+        <div class="col-start-10 col-span-3 row-start-1 row-span-6 bg-dark"><!--Info nemocnice-->
+            <div class="px-8 pt-24 text-whiteb h-[40%]"><!--base info-->
+                <div class="rounded-full mx-2 w-28 h-28 bg-whiteb stroke-rosen flex items-center justify-center"><!--Ikona-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="rosen" viewBox="0 0 24 24" stroke-width="4" stroke="Current-color" class="w-18">
+                        <path stroke-linecap="none" stroke-linejoin="none" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>                  
+                </div>
+                <h2 class="pt-4 text-xl font-medium">Jaroslav Novák</h2>
+                <h4 class="pt-2 text-base font-normal">recepční</h4>
+
+                <div class="text-base pt-8"> +420 606 606 066</div>
+                <div class="text-base"> jaroslav@nemocnicetisnov.cz</div>
+            </div>
+            <div class="px-8 text-whiteb pt-8 h-[40%]"><!--Oddeleni-->
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 1</h4>
+                    <div class="py-2">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 2</h4>
+                    <div class="py-2 hidden">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg hover:text-blu">Oddeleni 3</h4>
+                    <div class="py-2 hidden ">
+                        <div class="text-sm"> Prvni patro, Velka budova</div>
+                        <div class="text-sm"> primář Zdeněk Klokan</div>
+                        <div class="text-sm"> +420 606 606 866</div>
+                        <div class="text-sm"> oddeleni1@nemocnicetisnov.cz</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[15%]"><!--slovnicek-->
+                <button class="bg-rosen h-[6vh] w-[80%] ml-6 rounded-lg text-whiteb mt-4 flex items-center justify-center">
+                    Hlavní stránka
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
