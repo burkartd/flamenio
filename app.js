@@ -56,19 +56,20 @@ io.on('connection', socket => {
     });
 
 
-
     socket.on('hostConnect', (chatId, cb) => {
+        
+        socket.join(chatId);
         const user = { //novy
             username: 'host',
             role: 'host',
             id: socket.id,
-            roomnumber: chatId
+            roomNumber: chatId
         };
 
         const roomObj = { //nová roomka
             host: user,
             userList: [],
-            roomName: chatId,
+            roomNumber: chatId,
             usersCount: 0
         };
 
@@ -77,5 +78,45 @@ io.on('connection', socket => {
 
         cb(true);
 
+    });
+
+    socket.on('userConnect', (roomId, cb) => {
+
+        let canJoin = io.sockets.adapter.rooms.has(roomId);
+
+        if(canJoin === false)
+        {
+            cb(false);
+            return;
+        }
+
+        socket.join(roomka);
+        const user = {
+            userName: 'patient',
+            role: 'patient',
+            id: socket.id,
+            roomnNumber: roomId
+        };
+        const index = rooms.findIndex(room => room.roomNumber === roomId);
+        if(index !== -1)
+        {
+            rooms[index].userList.push(user);
+            rooms[index].usersCount++;
+            console.log(rooms[index]);
+        }
+
+    });
+
+    socket.on('messageFromHospital', (data) => {
+        console.log(data);
+        
+        const tmp = io.sockets.sockets.get(data.zakid);
+        
+        let zprava = {typ: data.typ, msg: data.msg, lang: data.lang, typ: data.typ};
+
+        if(tmp) tmp.emit('zpravaZakovi', zprava);
+
+        //io.sockets.sockets.get(data.zakid).emit('zpravaZakovi', data.msg);
+        
     })
 })

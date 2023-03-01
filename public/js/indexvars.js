@@ -9,6 +9,12 @@ const index4 = document.getElementById('index4');
 const indexList = [index1, index2, index3, index4];
 const loginToDashboard = document.getElementById('login_to_dashboard');
 const idInput = document.getElementById('id_input');
+const MainChat = document.getElementById('main_chat');
+const ChatSend = document.getElementById('chat_send');
+const ChatInput = document.getElementById('chat_input');
+
+var roomNumber = -1;
+var LocalLanguage = 'cs';
 
 //index2
 const nameInput = document.getElementById('input_name');
@@ -24,7 +30,7 @@ const chatIcon = document.getElementById('chat_icon');
 
 const closeButton = document.getElementById('close_button');
 
-
+var ActiveScreen = 1;
 
 var PatientData = 
 {language: null,
