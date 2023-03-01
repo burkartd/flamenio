@@ -69,26 +69,7 @@
             </script>
         </div>
         <div class="col-start-2 col-span-10 h-[50vh] text-dark mt-[80px]"><!--Obsah stranky - profil pacienta--> 
-            <h1 class="text-[34px] pb-2 pt-8 font-semibold"><!--Jmeno-->
-                Karel Pacient
-            </h1>
-            <div class="text-xl pb-2 font-medium"><!--Info-->
-                <span class="flex py-2"><!--Jazyk-->
-                    Polska republika<img src="./img/pl.png" class="ml-2 h-6">
-                </span>
-                <div class="flex py-2"><!--ID-->
-                    122020/2002
-                </div>
-                <div class="flex py-2"><!--Mail-->
-                    karelpacient@gmail.com
-                </div>
-                <div class="flex py-2"><!--Mobile-->
-                    605 111 235
-                </div>
-                <div class="flex text-lg py-2 hover:text-blu text-rosen underline"><!--Mobile-->
-                    Odebrat pacienta z místnosti
-                </div>
-            </div>
+
         </div>
         <div class="fixed left-0 bottom-0 z-50 mb-4 ml-4"><!--Mobile chat-->
             <div><!--Chat icon-->
@@ -101,7 +82,7 @@
         </div>
     </div>
 
-    <div class="h-screen w-screen bg-whiteb font-poppins md:grid hidden grid-cols-12 grid-rows-6"><!--Full stranka pocitac-->
+    <div class="h-screen w-screen bg-whiteb font-poppins lg:grid hidden grid-cols-12 grid-rows-6"><!--Full stranka pocitac-->
         <div class="col-start-1 col-span-9 row-start-1 text-dark row-span-1 bg-whiteb flex justify-between p-8"><!--Nazev + jazyk-->
             <div>
                 <h1 class="text-[38px] font-semibold">Nemocnice Tišnov a.s.</h1>
@@ -121,192 +102,280 @@
             </div>
         </div>
 
-        <div class="col-start-1 col-span-9 row-start-2 px-[8%] row-span-6 bg-whiteb overflow-auto scrollbar"><!--Slovnicek-->
-            <div class="flex justify-between mt-20"><!--ctverecky vsechny-->
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
+        <div class="col-start-1 col-span-9 row-start-2 px-[8%] pr-[30%] row-span-2"><!--Slovnicek dynamicky-->
+            <div class="h-[40%]"><!--custom input -->
+                <div class="h-[50%] flex items-end">
+                        <div class="h-[70%] ml-[5%] itemscenter w-[80%]">
+                            <select class="form-select appearance-none 
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            text-dark
+                            bg-whiteb bg-clip-padding bg-no-repeat
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                                <option selected value="1">Čeština</option>
+                                <option value="2">Němčina</option>
+                                <option value="3">Angličtina</option>
+                            </select>
+                        </div>
+                        <div class="w-[20%] h-[70%] px-3 hover:text-rosen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                            </svg>
+                        </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
+                <div class=" h-[50%] flex items-start"><!--MSG field-->
+                    <input class="bg-white bg-clip-padding bg-no-repeat h-[70%] ml-[5%]
+                        border border-solid border-none appearance-none rounded-2xl w-[80%]  text-base
+                        text-dark pl-2 pr-12 px-4 leading-tight focus:outline-none focus:border-rosen" id="full-name" type="text" 
+                        maxlength="300" placeholder="Message..." required>
+                    <button class="bg-rosen hover:bg-whiteb w-[10%] h-[70%] rounded-2xl ml-[-5%] flex items-center justify-center stroke-whiteb hover:stroke-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                        </svg>                  
+                    </button>
                 </div>
             </div>
-            <div class="flex justify-between mt-20"><!--ctverecky vsechny-->
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
-                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                        </svg>                          
-                    </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
-                        Introductions
-                    </div>
-                </div>
+            <div class="h-[20%] flex justify-center mr-[20%]"><!--mezi prostor-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>    
             </div>
-            <div class="flex justify-between mt-20"><!--ctverecky vsechny-->
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+            <div class="h-[40%]"><!--custom output-->
+                <div class="h-[50%] flex items-end">
+                    <div class="h-[70%] ml-[5%] itemscenter w-[80%]">
+                        <select class="form-select appearance-none 
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        text-dark
+                        bg-whiteb bg-clip-padding bg-no-repeat
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-dark focus:bg-whiteb focus:border-rosen focus:outline-none" aria-label="Default select example">
+                            <option selected>Vyber jazyk 
+                        </option>
+                            <option value="1">Čeština</option>
+                            <option value="2">Němčina</option>
+                            <option value="3">Angličtina</option>
+                        </select>
+                    </div>
+                    <div class="w-[20%] h-[70%] px-3 hover:text-rosen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                          </svg>
+                          
+                    </div>
+            </div>
+            <div class=" h-[50%] flex items-start"><!--MSG field-->
+                <output class="bg-white bg-clip-padding bg-no-repeat h-[70%] ml-[5%]
+                    border border-solid border-none appearance-none rounded-2xl w-[85%]  text-base
+                    text-dark pl-2 pr-12 px-4 leading-tight focus:outline-none focus:border-rosen" id="full-name" type="text" 
+                    maxlength="300" placeholder="Message..." required>
+
+            </div>
+            </div>
+        </div>
+
+        <div class="col-start-1 col-span-9 row-start-4 px-[8%] row-span-3 bg-whiteb overflow-auto scrollbar"><!--Slovnicek statickej-->
+            <div class="flex justify-between mt-12"><!--ctverecky vsechny-->
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
-                <div><!--jeden ctverec-->
-                    <div class="w-32 h-32 bg-dark p-6 rounded-lg">
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
                         <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                         </svg>                          
                     </div>
-                    <div class="mt-4 text-lg font-medium text-dark text-center">
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
                         Introductions
                     </div>
                 </div>
+                
+            </div> 
+            <div class="flex justify-between mt-12"><!--ctverecky vsechny-->
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                
+            </div> 
+            <div class="flex justify-between mt-12"><!--ctverecky vsechny-->
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                <div class="w-[16%] justify-center px-auto"><!--jeden ctverec-->
+                    <div class="w-24 h-24 bg-dark p-4 rounded-lg flex justify-center items-center mx-auto">
+                        <svg class="w-20 text-whiteb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>                          
+                    </div>
+                    <div class="mt-4 text-base font-medium text-dark text-center px-4">
+                        Introductions
+                    </div>
+                </div>
+                
             </div> 
         </div>
 
